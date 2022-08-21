@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang ="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width-device-width, initial-scale=1.0">
+        <meta name="author" content="Pramada Shrestha">
+        <link rel="stylesheet" href="stylep.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+        <title>Cart-Pets Land</title>
+    </head>
+
+    <body>
+        <section class="header">
+            <nav>
+            <a href="index.html"><img src="images/logo.png"></a>
+         
+            <div class ="navlinks" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                
+                <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="account.html">Account</a></li> 
+                
+                <li><a href="cart.html"><img src="images/filnalcart.png" width="30px" height="30px"></a></li>
+                
+                </ul>
+                
+            </div>
+                
+                <i class="fa fa-bars"  onclick="showMenu()"></i>
+                
+            </nav>
+
+        </section>
+
+        <div class="container cart">
+            <table>
+                <tr>
+                    <th>Product</th>
+                    <th>Quantity</th>
+                    <th>Subtotal</th>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="cart-info">
+                            <img src="images/c1.jpg" width="30%">
+                            <div>
+                                <p>Gold Chain</p>
+                                <small>Price: $75</small>
+                                <br>
+                                <a href="">Remove</a>
+                            </div>
+                        </div>
+                    </td>
+                    <td><input type="number" value="1"></td>
+                    <td>$75</td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="cart-info">
+                            <img src="images/cp1.jpg" width="30%">
+                            <div>
+                                <p>Gold Charm</p>
+                                <small>Price: $50</small>
+                                <br>
+                                <a href="">Remove</a>
+                            </div>
+                        </div>
+                    </td>
+                    <td><input type="number" value="1"></td>
+                    <td>$50</td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="cart-info">
+                            <img src="images/hat1.jpg" width="30%">
+                            <div>
+                                <p>Cute pup/kitten hat</p>
+                                <small>Price: $45</small>
+                                <br>
+                                <a href="">Remove</a>
+                            </div>
+                        </div>
+                    </td>
+                    <td><input type="number" value="1"></td>
+                    <td>$45</td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="cart-info">
+                            <img src="images/toy5.jpg" width="30%">
+                            <div>
+                                <p>Scratch rope for cats</p>
+                                <small>Price: $15</small>
+                                <br>
+                                <a href="">Remove</a>
+                            </div>
+                        </div>
+                    </td>
+                    <td><input type="number" value="1"></td>
+                    <td>$15</td>
+                </tr>
+            </table>
+
+            <div class="total-p">
+                <table>
+                    <tr>
+                        <td>Subtotal</td>
+                        <td>$185.00</td>
+                    </tr>
+                    <tr>
+                        <td>Tax</td>
+                        <td>$15.00</td>
+                    </tr>
+                    <tr>
+                        <td>Service Tax</td>
+                        <td>$10.00</td>
+                    </tr>
+                    <tr>
+                        <td>Total</td>
+                        <td>$210.00</td>
+                    </tr>
+                </table>
+            </div>
+
+        </div>
+        
+
+        
+        
+
+        <section class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="f-col1">
+                        <h3>Our App</h3>
+                        <p>Download App for Android and IOS</p>
+                        <div class="app-logo">
+                            <img src="images/play1.png">
+                            <img src="images/app.png">
+                        </div>
+                    </div>
+                    <div class="f-col2">
+                        <img src="images/logo.png">
+                        <p>Our main priority is your convinience.</p>
+                    </div>
+                    <div class="f-col3">
+                        <h3>Related links</h3>
+                        <ul>
+                            <li>Coupons</li>
+                            <li>Blog Post</li>
+                            <li>Return Policy</li>
+                            <li>Join Affiliates</li>
+                        </ul>
+                    </div>
+                    <div class="f-col4">
+                        <h3>Follow Us</h3>
+                        <ul>
+                            <li><i class="fa fa-instagram"></i> Instagram</li>
+                            <li><i class="fa fa-facebook-square"></i> Facebook</li>
+                            <li><i class="fa fa-twitter"></i> Twitter</li>
+                            <li><i class="fa fa-youtube-play"></i> You Tube</li>
+                        </ul>
+                    </div>
+                </div>
+                <hr>
+                <p class="cpr">Copyright 2022</p>
+            </div>
+            
+        </section>
+        
+        <script>
+            var navLinks= document.getElementById("navLinks");
+            function showMenu(){
+                navLinks.style.right="0";
+            }
+            function hideMenu(){
+                navLinks.style.right="-200px"
+            }
+        </script>
+    </body>
+</html>
+
