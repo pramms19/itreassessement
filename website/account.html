@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang ="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width-device-width, initial-scale=1.0">
+        <meta name="author" content="Pramada Shrestha">
+        <link rel="stylesheet" href="stylep.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+        <title>Account-Pets Land</title>
+    </head>
+
+    <body>
+        <section class="header">
+            <nav>
+            <a href="index.html"><img src="images/logo.png"></a>
+         
+            <div class ="navlinks" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                
+                <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="gallery.html">Products</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="account.html">Account</a></li> 
+                
+                <li><a href="cart.html"><img src="images/filnalcart.png" width="30px" height="30px"></a></li>
+                
+                </ul>
+                
+            </div>
+                
+                <i class="fa fa-bars"  onclick="showMenu()"></i>
+                
+            </nav>
+        </section>
+        <br>
+        
+        
+        <div class="sub-header">
+            <div class="form-box">
+                <div class="button-box">
+                    <div id="btn"></div>
+                    <button type="button" class="form-btn" onclick="login()">Log In</button>
+                    <button type="button" class="form-btn" onclick="register()">Register</button>
+                </div>
+                <form id="login" class="input-group">
+                    <input type="text" class="input-field" placeholder="User Id" required>
+                    <input type="text" class="input-field" placeholder="Enter Password" required>
+                    
+                    <button type="submit" class="submit-btn">Log In</button>
+                </form>
+                <form id="register" class="input-group">
+                    <input type="text" class="input-field" placeholder="User Id" required>
+                    <input type="email" class="input-field" placeholder="Email Address" required>
+                    <input type="text" class="input-field" placeholder="Enter Password" required>
+                    
+                    <button type="submit" class="submit-btn">Register</button>
+                </form>
+            </div>
+            
+        </div>
+        
+
+        <br>
+        <br>
+        <section class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="f-col1">
+                        <h3>Our App</h3>
+                        <p>Download App for Android and IOS</p>
+                        <div class="app-logo">
+                            <img src="images/play1.png">
+                            <img src="images/app.png">
+                        </div>
+                    </div>
+                    <div class="f-col2">
+                        <img src="images/logo.png">
+                        <p>Our main priority is your convinience.</p>
+                    </div>
+                    <div class="f-col3">
+                        <h3>Related links</h3>
+                        <ul>
+                            <li>Coupons</li>
+                            <li>Blog Post</li>
+                            <li>Return Policy</li>
+                            <li>Join Affiliates</li>
+                        </ul>
+                    </div>
+                    <div class="f-col4">
+                        <h3>Follow Us</h3>
+                        <ul>
+                            <li><i class="fa fa-instagram"></i> Instagram</li>
+                            <li><i class="fa fa-facebook-square"></i> Facebook</li>
+                            <li><i class="fa fa-twitter"></i> Twitter</li>
+                            <li><i class="fa fa-youtube-play"></i> You Tube</li>
+                        </ul>
+                    </div>
+                </div>
+                <hr>
+                <p class="cpr">Copyright 2022</p>
+            </div>
+            
+        </section>
+        
+        <script>
+            var navLinks= document.getElementById("navLinks");
+            function showMenu(){
+                navLinks.style.right="0";
+            }
+            function hideMenu(){
+                navLinks.style.right="-200px"
+            }
+
+            var x = document.getElementById("login");
+            var y = document.getElementById("register");
+            var z = document.getElementById("btn");
+
+            function register(){
+                x.style.left="-400px";
+                y.style.left="50px";
+                z.style.left="110px";
+            }
+
+            function login(){
+                x.style.left="50px";
+                y.style.left="450px";
+                z.style.left="0px";
+            }
+        </script>
+
+        
+
+    </body>
+</html>
+
